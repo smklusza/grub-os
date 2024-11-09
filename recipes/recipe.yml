@@ -24,10 +24,10 @@ modules:
       - numix-icon-theme-circle
       - numix-icon-theme-square
       - numix-gtk-theme
-      - numix icon-theme
+      - numix-icon-theme
       # R programming
       - R
-      - rstudio
+      - julia
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
