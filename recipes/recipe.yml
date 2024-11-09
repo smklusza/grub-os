@@ -18,25 +18,33 @@ modules:
   - type: rpm-ostree
     repos:
       # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
-      - https://download.docker.com/linux/fedora/docker-ce.repo
+      # - https://download.docker.com/linux/fedora/docker-ce.repo
     install:
-      # - micro
-      # - starship
-      # Install Docker and Podman
-      - docker-ce
-      - docker-ce-cli
-      - containerd.io
-      - docker-compose-plugin
-      # Deps
-      - python3-tkinter
-      - python3-wxpython4
-      # Distrobox
-      - distrobox
+      # numix swag
+      - numix-icon-theme-circle
+      - numix-icon-theme-square
+      - numix-gtk-theme
+      - numix icon-theme
+      # R programming
+      - R
+      - rstudio
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
-      # - firefox
-      # - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+      - firefox
+      - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+  - type: fonts
+    fonts:
+      nerd-fonts:
+        - FiraCode # don't add spaces or "Nerd Font" suffix.
+        - Hack
+        - SourceCodePro
+        - Terminus
+        - JetBrainsMono
+        - NerdFontsSymbolsOnly
+      google-fonts:
+        - Roboto
+        - Open Sans
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
