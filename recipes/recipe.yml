@@ -29,7 +29,7 @@ modules:
       - R
       - julia
       # net install
-      - https://github.com/kando-menu/kando/releases/download/v1.5.1/kando-1.5.1-1.x86_64.rpm
+      # - https://github.com/kando-menu/kando/releases/download/v1.5.1/kando-1.5.1-1.x86_64.rpm 
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
